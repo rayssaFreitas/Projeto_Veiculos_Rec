@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './pages/home/home.component';
+import { AuthGuard } from './core/middleware/AuthGuard';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserAnimationsModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
