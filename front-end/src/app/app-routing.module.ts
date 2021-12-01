@@ -6,20 +6,11 @@ import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
-    path: '', component: MainComponent, children: [
-      {
-        path: '', pathMatch: 'full',
-        redirectTo: '/home'
-      },
-      {
-        path: 'home', component: HomeComponent,
-        canActivate: [AuthGuard]
-      },
-      {
-        path: 'deslogado',
-        loadChildren: () => import('./pages/deslogado/deslogado.module').then(m => m.DeslogadoModule)
-      }
-    ]
+    path: 'home', component: HomeComponent
+  },
+  {
+    path: 'deslogado',
+    loadChildren: () => import('./pages/deslogado/deslogado.module').then(m => m.DeslogadoModule)
   }
 ];
 
