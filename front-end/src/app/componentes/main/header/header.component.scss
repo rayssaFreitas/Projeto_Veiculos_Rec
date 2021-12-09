@@ -1,3 +1,33 @@
-.background{
-    background-color: red;
+#header{
+    background-color: #F1F9FF;
+    padding: 20px;
+}
+
+h1, p, button{
+    font-family: 'Nunito';
+}
+
+h1, .icon-principal{
+    color: #001190;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.menu{
+    color: #495057;
+    font-size: 18px;
+    border-bottom: solid 2px #33CCCC !important; 
+    border: none;
+    border-radius: 0% !important; 
+    background: none;
+}
+
+.login-button{
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #001190;
+    border: none;
+    width: 81px;
+    height: 33px;
+    border-radius: 5px;
 }

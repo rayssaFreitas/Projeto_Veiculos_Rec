@@ -1,11 +1,15 @@
-<div class="background">
-    <div>
+<div id="header" fxLayout="row" fxFlexFill fxLayoutAlign="none center">
+    <div fxLayoutAlign="start none" fxLayoutGap="10px">
+        <mat-icon class="icon-principal">star_border_purple500</mat-icon>
         <h1>SiteVeiculos</h1>
     </div>
 
-    <div>
-        <p>Sobre nós</p>
-        <p>Veículos</p>
-        <p>Contato</p>
+    <div fxLayout="row" fxLayoutAlign="end none" fxLayoutGap="10px">
+        <button class="menu" mat-button>Sobre nós</button>
+        <button class="menu" mat-button>Veículos</button>
+
+        <button class="menu" mat-button>Contato</button>
+
+        <button mat-button class="login-button">Entrar</button>
     </div>
 </div>

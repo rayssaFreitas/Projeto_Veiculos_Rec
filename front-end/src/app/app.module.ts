@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './pages/home/home.component';
 import { AuthGuard } from './core/middleware/AuthGuard';
+import { MainModule } from './componentes/main/main.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AuthGuard } from './core/middleware/AuthGuard';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MainModule
   ],
   providers: [
     AuthGuard
