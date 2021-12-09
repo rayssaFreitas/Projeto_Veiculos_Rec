@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -15,12 +16,14 @@ import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     MainComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule,
     BrowserModule,
     FlexLayoutModule,
+    //AngularMaterial
     MatIconModule,
     MatMenuModule,
     MatButtonModule
