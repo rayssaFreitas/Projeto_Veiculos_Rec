@@ -1,0 +1,46 @@
+.center{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #001190;
+}
+
+mat-label{
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, textarea{
+    border: 1px solid #ADB5BD;
+    border-radius: 5px;
+}
+
+input{
+    height: 49px;
+    // width: 352px;
+}
+
+.w-100{
+    width: 100%;
+    text-align: center;
+    flex: none;
+}
+
+.pd-10{
+    padding: 10px;
+}
+
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pr-10{
+    padding-right: 10px;
+}

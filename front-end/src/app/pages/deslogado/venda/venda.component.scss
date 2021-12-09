@@ -1,0 +1,39 @@
+h1{
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #001190;
+}
+
+.center{
+    text-align: center;
+}
+
+p, button, li{
+    font-family: 'Nunito';
+}
+
+p, li{
+    color: #495057;
+    font-size: 18px;
+}
+
+li{
+    line-height: 32px;
+}
+
+.button-venda{
+    border: none;
+    border-radius: 5px;
+    background-color: #33CCCC;
+    color: #FFFFFF;
+    width: 243px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.my-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
