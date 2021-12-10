@@ -11,7 +11,7 @@ h1{
 }
 
 mat-label{
-    color: blue;
+    color: #001190;
     font-size: 18px;
     font-weight: bold;
 }
@@ -23,13 +23,17 @@ input, textarea{
 
 input{
     height: 49px;
-    // width: 352px;
+    width: 400px;
 }
 
-.w-100{
+textarea{
+    height: 157px;
+    width: 437px;
+}
+
+.center{
     width: 100%;
-    text-align: center;
-    flex: none;
+    justify-content: center;
 }
 
 .pd-10{

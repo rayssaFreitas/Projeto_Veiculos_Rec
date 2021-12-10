@@ -3,20 +3,22 @@ import { CommonModule } from '@angular/common';
 import { DeslogadoRoutingModule } from './deslogado.routing';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InicialComponent } from './inicial/inicial.component';
-import { VendaComponent } from './venda/venda.component';
-import { ContatoComponent } from './contato/contato.component';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { InicialContatoComponent } from './inicial-contato/inicial-contato.component';
+import { InicialVendaComponent } from './inicial-venda/inicial-venda.component';
+import { LoginComponent } from './login/login.component';
 
 
 
 @NgModule({
   declarations: [
     InicialComponent,
-    VendaComponent,
-    ContatoComponent
+    InicialContatoComponent,
+    InicialVendaComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
