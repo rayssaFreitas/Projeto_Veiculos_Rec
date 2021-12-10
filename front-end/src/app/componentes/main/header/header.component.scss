@@ -27,12 +27,16 @@ h1, .icon-principal{
     background: none;
 }
 
-.login-button{
-    color: #FFFFFF;
-    font-size: 18px;
+.button-login{
     background-color: #001190;
     border: none;
     width: 81px;
     height: 33px;
     border-radius: 5px;
+}
+
+a{
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
 }
