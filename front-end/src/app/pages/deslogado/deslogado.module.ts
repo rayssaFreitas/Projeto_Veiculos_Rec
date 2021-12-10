@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { InicialContatoComponent } from './inicial-contato/inicial-contato.component';
 import { InicialVendaComponent } from './inicial-venda/inicial-venda.component';
 import { LoginComponent } from './login/login.component';
+import { NovaSenhaComponent } from './nova-senha/nova-senha.component';
 
 
 
@@ -18,7 +19,8 @@ import { LoginComponent } from './login/login.component';
     InicialComponent,
     InicialContatoComponent,
     InicialVendaComponent,
-    LoginComponent
+    LoginComponent,
+    NovaSenhaComponent
   ],
   imports: [
     CommonModule,

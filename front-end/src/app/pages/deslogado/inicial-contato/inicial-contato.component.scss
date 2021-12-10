@@ -21,10 +21,14 @@ mat-label{
 input, textarea{
     border: 1px solid #ADB5BD;
     border-radius: 5px;
+    color: #495057;
+    font-family: 'Nunito';
+    font-size: 18px;
+    padding: 10px;
 }
 
 input{
-    height: 49px;
+    height: 40px;
     width: 400px;
 }
 

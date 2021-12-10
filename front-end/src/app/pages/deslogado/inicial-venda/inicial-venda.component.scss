@@ -1,5 +1,10 @@
 @import '~@angular/material/theming';
 
+.my-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 h1{
     font-family: 'Montserrat';
     font-size: 28px;
@@ -29,13 +34,12 @@ li{
     border: none;
     border-radius: 5px;
     background-color: #33CCCC;
-    color: #FFFFFF;
     width: 243px;
     height: 50px;
-    font-size: 20px;
 }
 
-.my-20{
-    margin-top: 20px;
-    margin-bottom: 20px;
+a{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
 }

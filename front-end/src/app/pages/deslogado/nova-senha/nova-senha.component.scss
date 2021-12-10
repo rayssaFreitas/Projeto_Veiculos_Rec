@@ -1,0 +1,52 @@
+@import '~@angular/material/theming';
+
+.pd-20{
+    padding: 20px;
+}
+
+.pt-10{
+    padding-top: 10px;
+}
+
+.container-mx{
+	margin: 20px;
+    padding: 0rem 12rem 0rem 12rem;
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #001190;
+}
+
+p{
+    color: #495057;
+    font-family: 'Nunito';
+    font-size: 18px;
+}
+
+p b{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 18px;
+    color: #001190;
+}
+
+input{
+    width: 60px;
+    height: 71px;
+    border: 1px solid #ADB5BD;
+    border-radius: 5px;
+}
+
+.conclued-button{
+    font-family: 'Nunito';
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #33CCCC;
+    color: #FFFFFF;
+    width: 130px;
+    height: 50px;
+}
