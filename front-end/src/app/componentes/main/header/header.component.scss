@@ -40,3 +40,13 @@ a{
     font-size: 18px;
     text-decoration: none;
 }
+
+@media  (max-width: 768px) {
+    h1{
+        font-size: 24px;
+    }
+
+    .menu{
+        font-size: 18px;
+    }
+}

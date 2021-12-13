@@ -1,16 +1,24 @@
 @import '~@angular/material/theming';
 
-.pd-20{
-    padding: 20px;
+.pd-10{
+    padding: 10px;
 }
 
 .pt-10{
     padding-top: 10px;
 }
 
+.pt-20{
+    padding-top: 20px;
+}
+
 .container-mx{
 	margin: 20px;
     padding: 0rem 12rem 0rem 12rem;
+}
+
+.cabecalho{
+    text-align: center;
 }
 
 h1{
@@ -20,24 +28,26 @@ h1{
     color: #001190;
 }
 
-p{
+p, input, .mat-form-field{
     color: #495057;
     font-family: 'Nunito';
     font-size: 18px;
 }
 
-p b{
+p b, mat-label{
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 18px;
     color: #001190;
 }
 
-input{
-    width: 60px;
+.input-code{
+    // width: 60px;
     height: 71px;
     border: 1px solid #ADB5BD;
     border-radius: 5px;
+    font-size: 26px !important;
+    text-align: center;
 }
 
 .conclued-button{
@@ -49,4 +59,21 @@ input{
     color: #FFFFFF;
     width: 130px;
     height: 50px;
+}
+
+.mat-form-field{
+    width: 60%;
+    padding: 20px;
+}
+
+@media  (max-width: 768px) {
+    .container-mx{
+        padding: 0rem;
+		margin: 0px;
+    }
+
+    .mat-form-field{
+        width: 100%;
+    }
+    
 }

@@ -8,12 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class NovaSenhaComponent implements OnInit {
 
   sendCode = false;
+  hide = true;
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.enviarSenha();
-  }
+  ngOnInit(): void {}
 
   enviarSenha(){
     this.sendCode = true;

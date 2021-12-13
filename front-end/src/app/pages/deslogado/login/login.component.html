@@ -1,21 +1,21 @@
 <div fxLayout="column" fxLayoutAlign="none center" class="container">
     <h1>Login</h1>
 
-    <div fxLayout="column" class="pd-10">
-        <section fxLayoutGap="40px" class="pd-10" fxLayoutAlign="end center">
+    <div fxLayout="column" fxLayoutAlign="none center" class="pd-10 w-100">
+        <section class="pd-10 w-100" fxLayoutGap.gt-sm="40px" fxLayoutAlign.gt-sm="center center" fxLayout.lt-md="column">
             <mat-label>CPF:</mat-label>
-            <div fxLayout="column">
+            <div fxLayout="column" fxFlex.gt-sm="40" fxFlex.lt-md="100">
                 <input matInput type="text" name="cpf" mask="000.000.000-00" placeholder="Digite seu CPF" >
                 <!-- <mat-error class="pt-5">CPF inválido. Tente novamente!</mat-error> -->
             </div>
         </section>
 
-        <section fxLayoutGap="40px" class="pd-10" fxLayoutAlign="end center">
+        <section class="pd-10 w-100" fxLayoutGap.gt-sm="40px" fxLayoutAlign.gt-sm="center center" fxLayout.lt-md="column">
             <mat-label>Senha:</mat-label>
-            <div fxLayout="column">
+            <div fxLayout="column" fxFlex.gt-sm="40" fxFlex.lt-md="100">
                 <input matInput type="password" name="senha" placeholder="Digite a sua senha">
                 <!-- <mat-error class="pt-5">Senha inválido. Tente novamente!</mat-error>  -->
-                <a routerLink="/deslogado/inicial" class="pt-5 forget">Esqueci minha senha!</a>
+                <a routerLink="/deslogado/nova-senha" class="pt-5 forget">Esqueci minha senha!</a>
             </div>
         </section>
     </div>
