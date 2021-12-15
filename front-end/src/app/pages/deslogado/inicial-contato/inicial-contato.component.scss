@@ -28,18 +28,22 @@ input, textarea{
 }
 
 input{
-    height: 40px;
-    width: 400px;
+    height: 60px;
+    // width: 400px;
 }
 
 textarea{
     height: 157px;
-    width: 437px;
+    // width: 437px;
 }
 
 .center{
     width: 100%;
     justify-content: center;
+}
+
+.w-100{
+    width: 100%;
 }
 
 .pd-10{
@@ -53,4 +57,14 @@ textarea{
 
 .pr-10{
     padding-right: 10px;
+}
+
+@media  (max-width: 768px) {
+    h1{
+        text-align: center;
+    }
+
+    // input{
+    //     height: 35px;
+    // }
 }

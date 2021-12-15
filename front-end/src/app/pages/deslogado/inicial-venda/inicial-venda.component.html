@@ -1,5 +1,5 @@
 <div fxFlex fxLayout="column" fxLayoutAlign="nome center" class="container">
-    <div class="center">
+    <div class="center w-100">
         <h1>Venda o seu veículo</h1>
         <p>
             Aqui você consegue vender o seu veículo de forma simples e fácil.
@@ -9,14 +9,14 @@
         </p>
     
         <div class="my-20">
-            <ol>
-                <li>
+            <ol fxLayout="column" fxLayoutGap="10px">
+                <li fxFlex fxLayout.lt-md="column">
                     Coloque as informações do basica: (Ano, Cor, Modelo, Marca, etc.);
                 </li>
-                <li>
+                <li fxFlex fxLayout.lt-md="column">
                     Coloque o valor que você espera para o seu veículo;
                 </li>
-                <li>
+                <li fxFlex fxLayout.lt-md="column">
                     Aguarde a avaliação;
                 </li>
             </ol>
@@ -24,7 +24,7 @@
     </div>
     <div class="my-20">
         <button mat-button class="button-venda">
-            <a routerLink="/deslogado/login"><b>Vender</b></a>
+            <a routerLink="/deslogado/login">Vender</a>
         </button>
     </div>
 </div>

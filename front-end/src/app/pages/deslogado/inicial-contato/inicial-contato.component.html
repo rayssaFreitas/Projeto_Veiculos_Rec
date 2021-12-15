@@ -3,15 +3,15 @@
         <h1>Entre em contato conosco</h1>
     </div>
 
-    <div fxLayout="column" fxLayoutAlign="center none">
-        <div fxLayout="row" class="py-10" fxLayoutGap="40px" fxLayoutAlign="center none">
+    <div fxLayout="column" fxLayoutAlign="center none" class="w-100" fxLayoutGap.lt-sm="10px">
+        <div fxLayout.gt-sm="row" fxLayout.lt-md="column" class="py-10" fxLayoutGap.gt-sm="55px" fxLayoutGap.lt-md="10px" fxLayoutAlign="center none">
             <mat-label fxLayoutAlign="start center">E-mail:</mat-label>
-            <input matInput type="text" name="email" placeholder="Digite seu e-mail">
+            <input matInput type="text" name="email" placeholder="Digite seu e-mail" fxFlex.gt-sm="45" fxFlex.lt-md="100">
         </div>
 
-        <div fxLayout="row" class="py-10" fxLayoutGap="40px">
+        <div fxLayout.gt-sm="row" fxLayout.lt-md="column" class="py-10" fxLayoutGap.gt-sm="40px" fxLayoutGap.lt-md="10px" fxLayoutAlign="center none">
             <mat-label fxLayoutAlign="start start">Mensagem:</mat-label>
-            <textarea name="message" id="messagem" style="resize: none"></textarea>
+            <textarea name="message" id="mensagem" style="resize: none" fxFlex.gt-sm="50"></textarea>
         </div>
     </div>
 </div>
