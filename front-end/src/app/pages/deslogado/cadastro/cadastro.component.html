@@ -1,0 +1,254 @@
+<div fxLayout="column" class="container">
+    <form>
+        <div *ngIf="!dadosPessoais && !telefone && !endereco && !mostraDados && !criaSenha">
+            <section fxLayoutAlign="start none">
+                <h1>Faça seu cadastro - Passo I</h1>
+            </section>
+
+            <section fxLayout="column" class="container-mx w-100">
+                <div fxLayoutAlign="end center" fxLayout="row" fxLayoutGap="10px">
+                    <mat-label fxShow.gt-sm>Nome Completo: </mat-label>
+                    <mat-form-field appearance="fill" class="pd-10" fxFlex=75>
+                        <mat-label fxHide.gt-sm>Nome Completo:</mat-label>
+                        <input matInput name="nome" id="nome">
+                    </mat-form-field>
+                </div>
+                <div fxLayoutAlign="end center" fxLayout="row" fxLayoutGap="10px">
+                    <mat-label fxShow.gt-sm>E-mail: </mat-label>
+                    <mat-form-field appearance="fill" class="pd-10" fxFlex=75>
+                        <mat-label fxHide.gt-sm>E-mail: </mat-label>
+                        <input matInput name="email" id="email">
+                    </mat-form-field>
+                </div>
+                <div fxLayoutAlign="end center" fxLayout="row" fxLayoutGap="10px">
+                    <mat-label fxShow.gt-sm>CPF: </mat-label>
+                    <mat-form-field appearance="fill" class="pd-10" fxFlex=75>
+                        <mat-label fxHide.gt-sm>CPF: </mat-label>
+                        <input matInput name="cpf" id="cpf" placeholder="000.000.000-00">
+                    </mat-form-field>
+                </div>
+            </section>
+
+            <section fxLayout="row" class="pt-20">
+                <div fxLayoutAlign="start center">
+                    <a routerLink="/deslogado/login">Voltar</a>
+                </div>
+                <div fxLayoutAlign="end end">
+                    <button type="submit" matButton class="conclued-button" (click)="stepDados()" [disabled]="">
+                        Próximo
+                    </button>
+                </div>
+            </section>
+        </div>
+    </form>
+
+    <form>
+        <div *ngIf="dadosPessoais && !telefone && !endereco && !mostraDados && !criaSenha">
+            <section fxLayoutAlign="start none">
+                <h1>Faça seu cadastro - Passo II</h1>
+            </section>
+
+            <section fxLayout="column" class="container-mx w-100">
+                <div fxLayoutAlign="end center" fxLayout="row" fxLayoutGap="10px">
+                    <mat-label fxShow.gt-sm>Telefone Celular: </mat-label>
+                    <mat-form-field appearance="fill" class="pd-10" fxFlex=73>
+                        <mat-label fxHide.gt-sm>Telefone Celular:</mat-label>
+                        <input matInput name="celular" id="celular" mask="(00) 00000-0000" placeholder="Digite seu celular">
+                    </mat-form-field>
+                </div>
+                <div fxLayoutAlign="end center" fxLayout="row">
+                    <mat-label fxShow.gt-sm>Telefone Residencial: </mat-label>
+                    <mat-form-field appearance="fill" class="pd-10" fxFlex=73>
+                        <mat-label fxHide.gt-sm>Telefone Residencial: </mat-label>
+                        <input matInput name="residencial" id="residencial" mask="(00) 0000-0000" placeholder="Digite seu celular">
+                    </mat-form-field>
+                </div>
+            </section>
+
+            <section fxLayout="row" class="pt-20">
+                <div fxLayoutAlign="start center">
+                    <a routerLink="/deslogado/login">Voltar</a>
+                </div>
+                <div fxLayoutAlign="end end">
+                    <button type="submit" matButton class="conclued-button" (click)="stepTelefone()" [disabled]="">
+                        Próximo
+                    </button>
+                </div>
+            </section>
+        </div>
+    </form>
+
+    <form>
+        <div *ngIf="dadosPessoais && telefone && !endereco && !mostraDados && !criaSenha">
+            <section fxLayoutAlign="start none">
+                <h1>Faça seu cadastro - Passo III</h1>
+            </section>
+
+            <section fxLayout="column" class="w-100">
+                <div>
+                    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="10px">
+                        <mat-label fxShow.gt-sm>Rua: </mat-label>
+                        <mat-form-field appearance="fill" class="pd-10" fxFlex="70">
+                            <mat-label fxHide.gt-sm>Rua:</mat-label>
+                            <input matInput name="rua" id="rua">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutGap="40px">
+                    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="10px">
+                        <mat-label fxShow.gt-sm>Número: </mat-label>
+                        <mat-form-field appearance="fill" class="pd-10" fxFlex="70">
+                            <mat-label fxHide.gt-sm>Número: </mat-label>
+                            <input matInput name="numero" id="numero">
+                        </mat-form-field>
+                    </div>
+                    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="10px">
+                        <mat-label fxShow.gt-sm>Complemento: </mat-label>
+                        <mat-form-field appearance="fill" class="pd-10" fxFlex="70">
+                            <mat-label fxHide.gt-sm>Complemento: </mat-label>
+                            <input matInput name="complemento" id="complemento">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="10px">
+                        <mat-label fxShow.gt-sm>Bairro: </mat-label>
+                        <mat-form-field appearance="fill" class="pd-10" fxFlex="70">
+                            <mat-label fxHide.gt-sm>Bairro:</mat-label>
+                            <input matInput name="bairro" id="bairro">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutGap="40px">
+                    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="10px">
+                        <mat-label fxShow.gt-sm>Estado: </mat-label>
+                        <mat-form-field appearance="fill" class="pd-10" fxFlex="70">
+                            <mat-label fxHide.gt-sm>Estado: </mat-label>
+                            <input matInput name="estado" id="estado">
+                        </mat-form-field>
+                    </div>
+                    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="10px">
+                        <mat-label fxShow.gt-sm>Cidade: </mat-label>
+                        <mat-form-field appearance="fill" class="pd-10" fxFlex="70">
+                            <mat-label fxHide.gt-sm>Cidade: </mat-label>
+                            <input matInput name="cidade" id="cidade">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <div fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="10px">
+                        <mat-label fxShow.gt-sm>CEP: </mat-label>
+                        <mat-form-field appearance="fill" class="pd-10" fxFlex="30">
+                            <mat-label fxHide.gt-sm>CEP: </mat-label>
+                            <input matInput name="cep" id="cep" mask="0000-0000">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </section>
+
+            <section fxLayout="row" class="pt-20">
+                <div fxLayoutAlign="start center">
+                    <a routerLink="/deslogado/login">Voltar</a>
+                </div>
+                <div fxLayoutAlign="end end">
+                    <button type="submit" matButton class="conclued-button" (click)="stepEndereco()" [disabled]="">
+                        Próximo
+                    </button>
+                </div>
+            </section>
+        </div>
+    </form>
+
+    <form>
+        <div *ngIf="dadosPessoais && telefone && endereco && !mostraDados && !criaSenha">
+            <section fxLayoutAlign="start none">
+                <h1>Confirme seus dados</h1>
+            </section>
+
+            <section fxLayout="column" class="w-100">
+                <div class="py-20">
+                    <div fxLayout="row" fxLayoutGap="10px">
+                        <p>Nome Completo:</p>
+                        <span>Luana Fonseca da silva</span>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutGap="40px">
+                    <div fxLayout="row" fxLayoutGap="10px">
+                        <p>Telefone Celular:</p>
+                        <span>(11) 9 2123-8734</span>
+                    </div>
+                    <div fxLayout="row" fxLayoutGap="10px">
+                        <p>Telefone Residencial:</p>
+                        <span>(11) 9 123-8734</span>
+                    </div>
+                </div>
+                <div class="py-20">
+                    <div class="pb-10">
+                        <h4>Endereço Completo:</h4>
+                    </div>
+                    <div class="m-10">
+                        <div fxLayout="row" fxLayoutAlign="space-between none" fxLayoutGap="60px">
+                            <div fxLayout="row" fxLayoutGap="20px">
+                                <p>Rua:</p>
+                                <span>Rua 18 de Abril</span>
+                            </div>
+                            <div fxLayout="row" fxLayoutGap="20px">
+                                <p>Número:</p>
+                                <span>54</span>
+                            </div>
+                            <div fxLayout="row" fxLayoutGap="20px">
+                                <p>Complemento:</p>
+                                <span>Apto. 10</span>
+                            </div>
+                        </div>
+                        <div fxLayout="row" fxLayoutAlign="space-between none" fxLayoutGap="60px" class="pt-10">
+                            <div fxLayout="row" fxLayoutGap="20px">
+                                <p>Bairro:</p>
+                                <span>Bairro Cidade Ântonio Estevão de Carvalho</span>
+                            </div>
+                            <div fxLayout="row" fxLayoutGap="20px">
+                                <p>CEP:</p>
+                                <span>08226-021</span>
+                            </div>
+                        </div>
+                        <div fxLayout="row" fxLayoutAlign="space-between none" fxLayoutGap="60px" class="pt-10">
+                            <div fxLayout="row" fxLayoutGap="20px">
+                                <p>Cidade:</p>
+                                <span>São Paulo</span>
+                            </div>
+                            <div fxLayout="row" fxLayoutGap="20px">
+                                <p>Estado:</p>
+                                <span>São Paulo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-20">
+                    <div fxLayout="row" fxLayoutGap="10px">
+                        <div fxLayout="row" fxLayoutGap="10px">
+                            <p>E-mail:</p>
+                            <span>luanafonseca@gmail.com</span>
+                        </div>
+                        <div fxLayout="row" fxLayoutGap="10px">
+                            <p>CPF:</p>
+                            <span class="disable">112.836.443-09</span>
+                        </div>
+                    </div>                
+                </div>
+            </section>
+
+            <section fxLayout="row" class="pt-20">
+                <div fxLayoutAlign="start center">
+                    <a routerLink="/deslogado/login">Editar</a>
+                </div>
+                <div fxLayoutAlign="end end">
+                    <button type="submit" matButton class="conclued-button" (click)="stepTelefone()" [disabled]="">
+                        Confirmar
+                    </button>
+                </div>
+            </section>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,99 @@
+@import '~@angular/material/theming';
+
+.w-100{
+    width: 100%;
+}
+
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pt-10{
+    padding-top: 10px;
+}
+
+.pt-20{
+    padding-top: 20px;
+}
+
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.m-10{
+    margin: 10px;
+}
+
+.mx-40{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.container-mx{
+	margin: 20px;
+    padding: 0rem 12rem 0rem 12rem;
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #001190;
+}
+
+h4{
+    font-family: 'Nunito';
+    font-size: 22px;
+    color: #001190;
+    font-weight: bold;
+}
+
+.container-mx{
+	margin: 20px;
+    padding: 0rem 12rem 0rem 12rem;
+}
+
+mat-label, p{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 18px;
+    color: #001190;
+}
+
+.mat-form-field{
+    padding: 10px;
+}
+
+input{
+    color: #495057;
+}
+
+a{
+    color: #495057;
+    text-decoration: none;
+    border-bottom: solid 2px #33CCCC !important; 
+}
+
+a, .conclued-button, input{
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.conclued-button{
+    font-family: 'Nunito';
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #33CCCC;
+    color: #FFFFFF;
+    width: 130px;
+    height: 50px;
+}
+
+span{
+    font-family: 'Nunito';
+    font-size: 18px;
+    color: #ADB5BD;
+}

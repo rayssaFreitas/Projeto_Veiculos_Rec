@@ -11,6 +11,7 @@ import { InicialContatoComponent } from './inicial-contato/inicial-contato.compo
 import { InicialVendaComponent } from './inicial-venda/inicial-venda.component';
 import { LoginComponent } from './login/login.component';
 import { NovaSenhaComponent } from './nova-senha/nova-senha.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 
 
@@ -20,7 +21,8 @@ import { NovaSenhaComponent } from './nova-senha/nova-senha.component';
     InicialContatoComponent,
     InicialVendaComponent,
     LoginComponent,
-    NovaSenhaComponent
+    NovaSenhaComponent,
+    CadastroComponent
   ],
   imports: [
     CommonModule,
