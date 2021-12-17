@@ -54,6 +54,11 @@ h4{
     padding: 0rem 12rem 0rem 12rem;
 }
 
+.container-min{
+    margin: 20px;
+    padding: 1.5rem 5rem 1.5rem 5rem;
+}
+
 mat-label, p{
     font-family: 'Montserrat';
     font-weight: bold;
@@ -67,6 +72,7 @@ mat-label, p{
 
 input{
     color: #495057;
+    padding: 5px;
 }
 
 a{
@@ -75,19 +81,19 @@ a{
     border-bottom: solid 2px #33CCCC !important; 
 }
 
-a, .conclued-button, input{
+a, .conclued-button, input, .disable{
     font-family: 'Nunito';
     font-size: 18px;
     font-weight: bold;
 }
 
-.conclued-button{
+.conclued-button, .conclued-button a{
     font-family: 'Nunito';
     font-size: 18px;
     border: none;
     border-radius: 5px;
     background-color: #33CCCC;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     width: 130px;
     height: 50px;
 }
@@ -96,4 +102,24 @@ span{
     font-family: 'Nunito';
     font-size: 18px;
     color: #ADB5BD;
+}
+
+.disable{
+    color: #495057;
+}
+
+@media  (max-width: 768px) {
+    .container-mx{
+        padding: 0rem;
+		margin: 0px;
+    }
+
+    .container-min{
+        padding: 2rem 1.5rem 2rem 1.5rem;
+		margin: 0px;
+    }
+
+    h1{
+        text-align: center;
+    }
 }

@@ -1,8 +1,9 @@
-<div id="header"  fxLayout.gt-sm="row" fxLayout.sm="column">
-    <div fxLayoutAlign="start center" fxLayoutGap="10px">
-        <mat-icon class="pb-10 icon-principal">star_border_purple500</mat-icon>
-        <h1>SiteVeiculos</h1>
-
+<div id="header" fxLayoutAlign="space-between center" fxLayout.gt-sm="row" fxLayout.lt-md="column">
+    <div fxLayoutAlign.lt-md="row" fxLayoutAlign.lt-md="space-between center" class="w-100">
+        <div fxLayoutAlign="start center" fxLayoutGap="10px">
+            <mat-icon class="pb-10 icon-principal">star_border_purple500</mat-icon>
+            <h1>SiteVeiculos</h1>
+        </div>
         <div fxLayoutAlign="end none" fxHide.gt-sm fxShow.lt-md>
             <button mat-button class="button-login" fxLayoutAlign="none center">
                 <a routerLink="/deslogado/login">Entrar</a>
@@ -10,7 +11,7 @@
         </div>
     </div>
 
-    <div fxLayout="row" fxLayoutAlign.gt-sm="end center" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
+    <div fxLayout="row" fxLayoutAlign.gt-sm="end center" fxLayoutAlign.lt-md="space-between center" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
         <button class="menu" mat-button>Sobre nós</button>
         <button class="menu" mat-button>Veículos</button>
         <button class="menu" mat-button>Contato</button>

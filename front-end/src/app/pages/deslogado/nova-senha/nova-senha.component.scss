@@ -49,13 +49,14 @@ p b, mat-label{
     text-align: center;
 }
 
-.conclued-button{
+.conclued-button, .conclued-button a{
     font-family: 'Nunito';
     font-size: 18px;
     border: none;
     border-radius: 5px;
     background-color: #33CCCC;
     color: #FFFFFF;
+    text-decoration: none;
     width: 130px;
     height: 50px;
 }

@@ -12,6 +12,8 @@ export class CadastroComponent implements OnInit {
   endereco = false;
   mostraDados = false;
   criaSenha = false;
+  hide = true;
+
 
   constructor() { }
 
@@ -27,6 +29,14 @@ export class CadastroComponent implements OnInit {
 
   stepEndereco(){
     this.endereco = true;
+  }
+
+  stepVerify(){
+    this.mostraDados = true;
+  }
+
+  stepPassword(){
+    this.mostraDados = true;
   }
 
 }
