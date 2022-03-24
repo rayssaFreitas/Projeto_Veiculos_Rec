@@ -1,11 +1,5 @@
 @import '~@angular/material/theming';
-
-h1{
-    font-family: 'Montserrat';
-    font-size: 28px;
-    text-transform: uppercase;
-    color: #001190;
-}
+@import '/src/styles.scss';
 
 mat-label{
     color: #001190;

@@ -1,15 +1,9 @@
 @import '~@angular/material/theming';
+@import '/src/styles.scss';
 
 .container-mx{
 	margin: 20px;
     padding: 0rem 12rem 0rem 12rem;
-}
-
-h1{
-    font-family: 'Montserrat';
-    font-size: 28px;
-    text-transform: uppercase;
-    color: #001190;
 }
 
 h4{
