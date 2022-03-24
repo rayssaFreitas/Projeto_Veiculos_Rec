@@ -6,12 +6,11 @@
 }
 
 h1, button{
-    font-family: 'Nunito';
+    font-family: 'Nunito' !important;
 }
 
 h1{
     font-weight: bold;
-    font-size: 28px;
 }
 
 .menu{
@@ -21,8 +20,4 @@ h1{
 
 button{
     font-size: 18px;
-}
-
-.pt-20{
-    padding-top: 20px;
 }

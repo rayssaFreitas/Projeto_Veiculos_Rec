@@ -1,5 +1,6 @@
 @import '~@angular/material/theming';
 @import 'scss/fonts';
+@import 'scss/format';
 
 // Reset
 html, body, div, span, applet, object, iframe,
@@ -27,6 +28,13 @@ html, body{
   height: 100%;
   box-sizing: border-box;
   line-height: 1;
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #001190;
 }
 
 .material-icons {

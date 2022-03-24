@@ -1,17 +1,5 @@
 @import '~@angular/material/theming';
 
-.pd-10{
-    padding: 10px;
-}
-
-.pt-5{
-    padding-top: 5px;
-}
-
-.w-100{
-    width: 100%;
-}
-
 h1{
     font-family: 'Montserrat';
     font-size: 28px;
@@ -29,7 +17,6 @@ input{
     border: 1px solid #ADB5BD;
     border-radius: 5px;
     height: 49px;
-    // width: 400px;
 }
 
 mat-error, .forget{
