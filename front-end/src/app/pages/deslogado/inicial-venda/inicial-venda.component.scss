@@ -1,17 +1,5 @@
 @import '~@angular/material/theming';
-
-.my-20{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-h1{
-    font-family: 'Montserrat';
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #001190;
-}
+@import '/src/styles.scss';
 
 .center{
     text-align: center;

@@ -1,21 +1,8 @@
 @import '~@angular/material/theming';
+@import '/src/styles.scss';
 
 .center{
     text-align: center;
-}
-
-h1{
-    font-family: 'Montserrat';
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #001190;
-}
-
-mat-label{
-    color: #001190;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 input, textarea{
@@ -38,28 +25,6 @@ textarea{
 .center{
     width: 100%;
     justify-content: center;
-}
-
-.w-100{
-    width: 100%;
-}
-
-.pd-10{
-    padding: 10px;
-}
-
-.py-10{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.pr-10{
-    padding-right: 10px;
-}
-
-.my-20{
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .button-send{
