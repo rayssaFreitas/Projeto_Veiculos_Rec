@@ -1,18 +1,18 @@
 #header{
     background-color: #F1F9FF;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 h1{
     font-family: 'Nunito' !important;
+    text-transform: none !important;
+    margin-bottom: 0px !important;
 }
 
-h1, .icon-principal{
+.icon-principal{
     color: #001190;
     font-weight: bold;
     font-size: 28px;
-    text-transform: none !important;
-    margin-bottom: 0px !important;
 }
 
 .menu{
@@ -24,9 +24,8 @@ h1, .icon-principal{
     background: none;
 }
 
-.header-login{
+.header-button{
     background-color: #001190;
-    width: 81px;
     height: 33px;
 }
 
@@ -40,6 +39,6 @@ h1, .icon-principal{
     }
 
     .menu{
-        font-size: 18px;
+        font-size: 14px;
     }
 }
