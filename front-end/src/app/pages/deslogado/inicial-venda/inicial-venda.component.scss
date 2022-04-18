@@ -1,18 +1,10 @@
 @import '~@angular/material/theming';
 
-h1{
-    font-family: 'Montserrat';
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #001190;
-}
-
 .center{
     text-align: center;
 }
 
-p, button, li{
+p, li{
     font-family: 'Nunito';
 }
 
@@ -30,15 +22,11 @@ li{
 }
 
 .button-venda{
-    border: none;
-    border-radius: 5px;
     background-color: #33CCCC;
     width: 243px;
     height: 50px;
 }
 
-a{
-    color: #FFFFFF;
-    font-size: 20px;
-    text-decoration: none;
+.button-venda a{
+    font-size: 23px !important;    
 }

@@ -30,11 +30,30 @@ html, body{
   line-height: 1;
 }
 
+b{
+	font-weight: bold;
+}
+
 h1{
-    font-family: 'Montserrat';
-    font-size: 28px;
+    font-family: 'Montserrat' !important;
+    font-size: 28px !important;
     text-transform: uppercase;
     color: #001190;
+}
+
+a{
+    color: #FFFFFF;
+    font-size: 18px;
+	font-family: 'Nunito';
+    text-decoration: none;
+}
+
+button, .mat-button{
+	font-family: 'Nunito';
+	font-size: 18px;
+	border-radius: 5px;
+	border: none;
+	color: #FFFFFF;
 }
 
 .material-icons {

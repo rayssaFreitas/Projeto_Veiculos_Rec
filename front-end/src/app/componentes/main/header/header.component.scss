@@ -3,7 +3,7 @@
     padding: 20px;
 }
 
-h1, button{
+h1{
     font-family: 'Nunito' !important;
 }
 
@@ -11,6 +11,7 @@ h1, .icon-principal{
     color: #001190;
     font-weight: bold;
     font-size: 28px;
+    text-transform: none !important;
     margin-bottom: 0px !important;
 }
 
@@ -25,16 +26,8 @@ h1, .icon-principal{
 
 .button-login{
     background-color: #001190;
-    border: none;
     width: 81px;
     height: 33px;
-    border-radius: 5px;
-}
-
-a{
-    color: #FFFFFF;
-    font-size: 18px;
-    text-decoration: none;
 }
 
 @media  (max-width: 768px) {
