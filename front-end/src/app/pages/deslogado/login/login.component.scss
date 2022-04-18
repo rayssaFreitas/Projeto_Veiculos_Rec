@@ -5,6 +5,7 @@ input{
     border: 1px solid #ADB5BD;
     border-radius: 5px;
     height: 49px;
+    padding: 0px 10px;
 }
 
 mat-error, .forget{
@@ -14,19 +15,9 @@ mat-error, .forget{
     text-decoration: none;
 }
 
-.button-login{
-    background-color: #33CCCC;
-    width: 140px;
-    height: 50px;
-    font-size: 22px !important;
-}
-
-input, p, .underline{
-    color: #495057;
+.underline{
     font-family: 'Nunito';
     font-size: 18px;
-}
-
-.underline{
+    color: #495057;
     border-bottom: solid 2px #33CCCC !important; 
 }

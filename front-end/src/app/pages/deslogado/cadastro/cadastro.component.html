@@ -8,21 +8,21 @@
             <section fxLayout="column" class="container-mx w-100">
                 <div fxLayoutAlign.gt-sm="end center" fxLayout="row" fxLayoutGap="10px">
                     <mat-label fxShow.gt-sm fxHide.lt-md fxHide.lt-md>Nome Completo: </mat-label>
-                    <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="75" fxFlex.lt-md="100">
+                    <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="75" fxFlex.lt-md="100">
                         <mat-label fxHide.gt-sm>Nome Completo:</mat-label>
                         <input matInput name="nome" id="nome">
                     </mat-form-field>
                 </div>
                 <div fxLayoutAlign.gt-sm="end center" fxLayout="row" fxLayoutGap="10px">
                     <mat-label fxShow.gt-sm fxHide.lt-md>E-mail: </mat-label>
-                    <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="75" fxFlex.lt-md="100">
+                    <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="75" fxFlex.lt-md="100">
                         <mat-label fxHide.gt-sm>E-mail: </mat-label>
                         <input matInput name="email" id="email">
                     </mat-form-field>
                 </div>
                 <div fxLayoutAlign.gt-sm="end center" fxLayout="row" fxLayoutGap="10px">
                     <mat-label fxShow.gt-sm fxHide.lt-md>CPF: </mat-label>
-                    <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="75" fxFlex.lt-md="100">
+                    <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="75" fxFlex.lt-md="100">
                         <mat-label fxHide.gt-sm>CPF: </mat-label>
                         <input matInput name="cpf" id="cpf" placeholder="000.000.000-00">
                     </mat-form-field>
@@ -36,7 +36,7 @@
                     </a>
                 </div>
                 <div>
-                    <button type="submit" matButton class="conclued-button" (click)="stepDados()" [disabled]="">
+                    <button fxFlex="100" type="submit" matButton class="okay-button px-25" (click)="stepDados()" [disabled]="">
                         Próximo
                     </button>
                 </div>
@@ -53,14 +53,14 @@
             <section fxLayout="column" class="container-mx w-100">
                 <div fxLayoutAlign.gt-sm="end center" fxLayout="row" fxLayoutGap="10px">
                     <mat-label fxShow.gt-sm fxHide.lt-md>Telefone Celular: </mat-label>
-                    <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="73" fxFlex.lt-md="100">
+                    <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="73" fxFlex.lt-md="100">
                         <mat-label fxHide.gt-sm>Telefone Celular:</mat-label>
                         <input matInput name="celular" id="celular" mask="(00) 00000-0000" placeholder="Digite seu celular">
                     </mat-form-field>
                 </div>
                 <div fxLayoutAlign.gt-sm="end center" fxLayout="row">
                     <mat-label fxShow.gt-sm fxHide.lt-md>Telefone Residencial: </mat-label>
-                    <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="73" fxFlex.lt-md="100">
+                    <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="73" fxFlex.lt-md="100">
                         <mat-label fxHide.gt-sm>Telefone Residencial: </mat-label>
                         <input matInput name="residencial" id="residencial" mask="(00) 0000-0000" placeholder="Digite seu celular">
                     </mat-form-field>
@@ -74,7 +74,7 @@
                     </a>
                 </div>
                 <div>
-                    <button type="submit" matButton class="conclued-button" (click)="stepTelefone()" [disabled]="">
+                    <button fxFlex="100" type="submit" matButton class="okay-button px-25"(click)="stepTelefone()" [disabled]="">
                         Próximo
                     </button>
                 </div>
@@ -92,7 +92,7 @@
                 <div>
                     <div fxLayoutAlign="start center" fxLayoutGap.gt-sm="50px">
                         <mat-label fxShow.gt-sm fxHide.lt-md>Rua: </mat-label>
-                        <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
+                        <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
                             <mat-label fxHide.gt-sm>Rua:</mat-label>
                             <input matInput name="rua" id="rua">
                         </mat-form-field>
@@ -101,14 +101,14 @@
                 <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="40px">
                     <div fxLayoutAlign="start center" fxLayoutGap="10px">
                         <mat-label fxShow.gt-sm fxHide.lt-md>Número: </mat-label>
-                        <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
+                        <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
                             <mat-label fxHide.gt-sm>Número: </mat-label>
                             <input matInput name="numero" id="numero">
                         </mat-form-field>
                     </div>
                     <div fxLayoutAlign="start center" fxLayoutGap="10px">
                         <mat-label fxShow.gt-sm fxHide.lt-md>Complemento: </mat-label>
-                        <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
+                        <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
                             <mat-label fxHide.gt-sm>Complemento: </mat-label>
                             <input matInput name="complemento" id="complemento">
                         </mat-form-field>
@@ -117,7 +117,7 @@
                 <div>
                     <div fxLayoutAlign="start center" fxLayoutGap.gt-sm="31px">
                         <mat-label fxShow.gt-sm fxHide.lt-md>Bairro: </mat-label>
-                        <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
+                        <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
                             <mat-label fxHide.gt-sm>Bairro:</mat-label>
                             <input matInput name="bairro" id="bairro">
                         </mat-form-field>
@@ -126,14 +126,14 @@
                 <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="40px">
                     <div fxLayoutAlign="start center" fxLayoutGap="24px">
                         <mat-label fxShow.gt-sm fxHide.lt-md>Estado: </mat-label>
-                        <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
+                        <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
                             <mat-label fxHide.gt-sm>Estado: </mat-label>
                             <input matInput name="estado" id="estado">
                         </mat-form-field>
                     </div>
                     <div fxLayoutAlign="start center" fxLayoutGap="10px">
                         <mat-label fxShow.gt-sm fxHide.lt-md>Cidade: </mat-label>
-                        <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
+                        <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
                             <mat-label fxHide.gt-sm>Cidade: </mat-label>
                             <input matInput name="cidade" id="cidade">
                         </mat-form-field>
@@ -142,7 +142,7 @@
                 <div>
                     <div fxLayoutAlign="start center" fxLayoutGap.gt-sm="50px">
                         <mat-label fxShow.gt-sm fxHide.lt-md>CEP: </mat-label>
-                        <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="30" fxFlex.lt-md="100">
+                        <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="30" fxFlex.lt-md="100">
                             <mat-label fxHide.gt-sm>CEP: </mat-label>
                             <input matInput name="cep" id="cep" mask="0000-0000">
                         </mat-form-field>
@@ -158,7 +158,7 @@
                     </a>
                 </div>
                 <div>
-                    <button type="submit" matButton class="conclued-button" (click)="stepEndereco()" [disabled]="">
+                    <button fxFlex="100" type="submit" matButton class="okay-button px-25" (click)="stepEndereco()" [disabled]="">
                         Próximo
                     </button>
                 </div>
@@ -175,17 +175,23 @@
             <section fxLayout="column">
                 <div fxLayout="column" class="py-20" fxLayoutGap.lt-md="20px">
                     <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                        <p>Nome Completo:</p>
+                        <p>
+                            <b>Nome Completo:</b>
+                        </p>
                         <span>Luana Fonseca da silva</span>
                     </div>
 
-                    <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="20px">
+                    <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="20px" class="pt-10">
                         <div fxFlex="50" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                            <p>Telefone Celular:</p>
+                            <p>
+                                <b>Telefone Celular:</b>
+                            </p>
                             <span>(11) 9 2123-8734</span>
                         </div>
                         <div fxFlex="50" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                            <p>Telefone Residencial:</p>
+                            <p>
+                                <b>Telefone Residencial:</b>
+                            </p>
                             <span>(11) 9 123-8734</span>
                         </div>
                     </div>
@@ -199,37 +205,51 @@
                     <div fxLayout="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="20px">
                         <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="20px">
                             <div fxFlex="50" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                                <p>Rua:</p>
+                                <p>
+                                    <b>Rua:</b>
+                                </p>
                                 <span>Rua 18 de Abril</span>
                             </div>
                             <div fxFlex="50" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                                <p>Número:</p>
+                                <p>
+                                    <b>Número:</b>
+                                </p>
                                 <span>54</span>
                             </div>
                         </div>
 
                         <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                            <p>Complemento:</p>
+                            <p>
+                                <b>Complemento:</b>
+                            </p>
                             <span>Apto. 10</span>
                         </div>
 
                         <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                            <p>Bairro:</p>
+                            <p>
+                                <b>Bairro:</b>
+                            </p>
                             <span>Bairro Cidade Ântonio Estevão de Carvalho</span>
                         </div>
 
                         <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                            <p>CEP:</p>
+                            <p>
+                                <b>CEP:</b>
+                            </p>
                             <span>08226-021</span>
                         </div>
 
                         <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="20px">
                             <div fxFlex="50" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                                <p>Estado:</p>
+                                <p>
+                                    <b>Estado:</b>
+                                </p>
                                 <span>São Paulo</span>
                             </div>
                             <div fxFlex="50" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                                <p>Cidade:</p>
+                                <p>
+                                    <b>Cidade:</b>
+                                </p>
                                 <span>São Paulo</span>
                             </div>
                         </div>
@@ -239,11 +259,15 @@
                 <div class="py-20">
                     <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="20px">
                         <div fxFlex="50" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                            <p>E-mail:</p>
+                            <p>
+                                <b>E-mail:</b>
+                            </p>
                             <span>luanafonseca@gmail.com</span>
                         </div>
                         <div fxFlex="50" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px" fxLayoutGap.lt-md="5px">
-                            <p>CPF:</p>
+                            <p>
+                                <b>CPF:</b>
+                            </p>
                             <span class="disable">112.836.443-09</span>
                         </div>
                     </div>
@@ -257,7 +281,7 @@
                     </a>
                 </div>
                 <div>
-                    <button type="submit" matButton class="conclued-button" (click)="stepVerify()" [disabled]="">
+                    <button fxFlex="100" type="submit" matButton class="okay-button px-25" (click)="stepVerify()" [disabled]="">
                         Confirmar
                     </button>
                 </div>
@@ -274,7 +298,7 @@
             <section fxLayout="column" class="container-mx w-100">
                 <div fxLayoutAlign="end center" fxLayout="row" fxLayoutGap="10px">
                     <mat-label fxShow.gt-sm fxHide.lt-md>Senha:</mat-label>
-                    <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
+                    <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
                         <mat-label  fxHide.gt-sm>Senha:</mat-label>
                         <input matInput [type]="hide ? 'password' : 'text'">
                         <!-- <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -284,7 +308,7 @@
                 </div>
                 <div fxLayoutAlign="end center" fxLayout="row" fxLayoutGap="10px">
                     <mat-label fxShow.gt-sm fxHide.lt-md>Confirmação da Senha:</mat-label>
-                    <mat-form-field appearance="fill" class="pd-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
+                    <mat-form-field appearance="fill" class="py-10" fxFlex.gt-sm="70" fxFlex.lt-md="100">
                         <mat-label  fxHide.gt-sm>Confirmação da Senha:</mat-label>
                         <input matInput [type]="hide ? 'password' : 'text'">
                         <!-- <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -296,7 +320,7 @@
 
             <section class="pt-20">
                 <div fxLayoutAlign="end none">
-                    <button type="submit" matButton class="conclued-button" (click)="stepPassword()" [disabled]="">
+                    <button fxFlex.gt-sm="15" fxFlex.lt-md="70" type="submit" matButton class="okay-button" (click)="stepPassword()" [disabled]="">
                         <a routerLink="/deslogado/login">Confirmar</a>
                     </button>
                 </div>

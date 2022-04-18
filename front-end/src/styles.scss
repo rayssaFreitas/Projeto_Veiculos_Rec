@@ -1,6 +1,7 @@
 @import '~@angular/material/theming';
 @import 'scss/fonts';
 @import 'scss/format';
+@import 'scss/screen.scss';
 
 // Reset
 html, body, div, span, applet, object, iframe,
@@ -41,6 +42,12 @@ h1{
     color: #001190;
 }
 
+p{
+	color: #495057;
+    font-family: 'Nunito';
+    font-size: 18px;
+}
+
 a{
     color: #FFFFFF;
     font-size: 18px;
@@ -54,6 +61,12 @@ button, .mat-button{
 	border-radius: 5px;
 	border: none;
 	color: #FFFFFF;
+}
+
+.mat-form-field, input, textarea{
+	font-family: 'Nunito';
+	color: #495057;
+	font-size: 18px;
 }
 
 mat-label{
@@ -71,11 +84,6 @@ mat-label{
 	}
 }
 
-.container{
-	margin: 20px;
-	padding: 4rem 5rem 5rem 5rem;
-}
-
 .mat-form-field-flex {
     display: inline-flex;
     align-items: baseline;
@@ -84,9 +92,12 @@ mat-label{
 	border-radius: 5px !important;
 }
 
-@media  (max-width: 768px) {
-    .container{
-        padding: 3rem 1rem 3rem 1rem;
-		margin: 0px;
-    }
+.okay-button{
+    background-color: #33CCCC;
+    height: 50px;
+	font-size: 20px;
+}
+
+.center{
+	text-align: center;
 }

@@ -1,25 +1,12 @@
 @import '~@angular/material/theming';
 @import '/src/styles.scss';
-    
-.container-mx{
-	margin: 20px;
-    padding: 0rem 12rem 0rem 12rem;
-}
 
-.cabecalho{
-    text-align: center;
-}
-
-p, input, .mat-form-field{
-    color: #495057;
-    font-family: 'Nunito';
-    font-size: 18px;
+.mat-form-field{
+    width: 60%;
 }
 
 p b{
     font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 18px;
     color: #001190;
 }
 
@@ -31,25 +18,8 @@ p b{
     text-align: center;
 }
 
-.conclued-button{
-    background-color: #33CCCC;
-    width: 130px;
-    height: 50px;
-}
-
-.mat-form-field{
-    width: 60%;
-    padding: 20px;
-}
-
 @media  (max-width: 768px) {
-    .container-mx{
-        padding: 0rem;
-		margin: 0px;
-    }
-
     .mat-form-field{
         width: 100%;
-    }
-    
+    }   
 }

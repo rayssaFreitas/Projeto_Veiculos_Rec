@@ -1,15 +1,8 @@
 @import '~@angular/material/theming';
 
-.center{
-    text-align: center;
-}
-
 input, textarea{
     border: 1px solid #ADB5BD;
     border-radius: 5px;
-    color: #495057;
-    font-family: 'Nunito';
-    font-size: 18px;
     padding: 10px;
 }
 
@@ -23,14 +16,8 @@ textarea{
 
 .center{
     width: 100%;
+    text-align: center;
     justify-content: center;
-}
-
-.button-send{
-    background-color: #33CCCC;
-    width: 243px;
-    height: 50px;
-    font-size: 23px !important;
 }
 
 @media  (max-width: 768px) {

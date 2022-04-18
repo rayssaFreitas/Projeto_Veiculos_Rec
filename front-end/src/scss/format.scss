@@ -8,6 +8,10 @@
     padding: 10px;
 }
 
+.pd-20{
+    padding: 20px;
+}
+
 // padding-top
 .pt-5{
     padding-top: 5px;
@@ -44,8 +48,14 @@
     padding-right: 10px;
 }
 
+// px (padding-right + padding-left)
+.px-25{
+    padding: 0px 25px !important;
+}
 
-// padding-left
+.px-50{
+    padding: 0px 50px !important;
+}
 
 
 

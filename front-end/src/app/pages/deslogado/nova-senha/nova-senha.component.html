@@ -1,7 +1,7 @@
 <div fxLayout="column" fxLayoutAlign="center none" class="container">
     <form (ngSubmit)="enviarSenha()">
         <div *ngIf="!sendCode">
-            <section fxLayout="column" fxLayoutAlign="none center" class="cabecalho pd-10">
+            <section fxLayout="column" fxLayoutAlign="none center" class="center pd-10">
                 <h1 class="pb-10">Esqueci minha senha</h1>
 
                 <p>Um código foi enviado para o seu e-mail:</p>
@@ -13,29 +13,29 @@
                     <b>Digite o código:</b>
                 </p>
 
-                <div fxLayout="row" fxLayoutAlign.gt-sm="space-between center" fxLayoutAlign.lt-md="none center" fxLayoutGap.lt-md="8px" class="pt-10">
-                    <input fxFlex.gt-sm="9" fxFlex.lt-md="18" type="text" name="code" id="code" class="input-code">
-                    <input fxFlex.gt-sm="9" fxFlex.lt-md="18" type="text" name="code" id="code" class="input-code">
-                    <input fxFlex.gt-sm="9" fxFlex.lt-md="18" type="text" name="code" id="code" class="input-code">
-                    <input fxFlex.gt-sm="9" fxFlex.lt-md="18" type="text" name="code" id="code" class="input-code">
-                    <input fxFlex.gt-sm="9" fxFlex.lt-md="18" type="text" name="code" id="code" class="input-code">
+                <div fxLayout="row" fxLayoutAlign.gt-sm="space-between center" fxLayoutAlign.lt-md="space-between center" fxLayoutGap.lt-md="8px" class="pt-10">
+                    <input fxFlex.gt-sm="9" fxFlex.lt-md="17" type="text" name="code" id="code" class="input-code">
+                    <input fxFlex.gt-sm="9" fxFlex.lt-md="17" type="text" name="code" id="code" class="input-code">
+                    <input fxFlex.gt-sm="9" fxFlex.lt-md="17" type="text" name="code" id="code" class="input-code">
+                    <input fxFlex.gt-sm="9" fxFlex.lt-md="17" type="text" name="code" id="code" class="input-code">
+                    <input fxFlex.gt-sm="9" fxFlex.lt-md="17" type="text" name="code" id="code" class="input-code">
                 </div>
             </section>
 
             <section fxLayoutAlign="end end" class="pt-20">
-                <button type="submit" matButton class="conclued-button" (click)="enviarSenha()" [disabled]="">
+                <button fxFlex.gt-sm="13" fxFlex.lt-md="55" type="submit" matButton class="okay-button" (click)="enviarSenha()" [disabled]="">
                     Próximo
                 </button>
             </section>
         </div>
 
         <div *ngIf="sendCode">
-            <section fxLayout="column" fxLayoutAlign="none center">
+            <section fxLayout="column" fxLayoutAlign="none center" class="pb-10">
                 <h1>Digite a nova senha</h1>
             </section>
 
             <section fxLayout="column" fxLayoutAlign="none center">
-                <mat-form-field appearance="fill" class="pd-10">
+                <mat-form-field appearance="fill" class="pd-20">
                     <mat-label>Senha: </mat-label>
                     <input matInput [type]="hide ? 'password' : 'text'">
                     <!-- <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -52,8 +52,8 @@
                 </mat-form-field>
             </section>
 
-            <section fxLayoutAlign="end end" class="pd-20">
-                <button type="submit" matButton class="conclued-button" [disabled]="">
+            <section fxLayoutAlign="end end" class="pd-10">
+                <button fxFlex.gt-sm="15" fxFlex.lt-md="75" type="submit" matButton class="okay-button" [disabled]="">
                     <a routerLink="/deslogado/login">Confirmar</a>
                 </button>
             </section>
