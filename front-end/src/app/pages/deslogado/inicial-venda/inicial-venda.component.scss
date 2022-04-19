@@ -1,37 +1,12 @@
 @import '~@angular/material/theming';
-@import '/src/styles.scss';
-
-.center{
-    text-align: center;
-}
-
-p, button, li{
-    font-family: 'Nunito';
-}
-
-p, li{
-    color: #495057;
-    font-size: 18px;
-}
-
-p{
-    font-weight: bold;
-}
 
 li{
+    font-family: 'Nunito';
+    color: #495057;
+    font-size: 18px;
     line-height: 32px;
 }
 
-.button-venda{
-    border: none;
-    border-radius: 5px;
-    background-color: #33CCCC;
-    width: 243px;
-    height: 50px;
-}
-
-a{
-    color: #FFFFFF;
-    font-size: 20px;
-    text-decoration: none;
+.okay-button a{
+    font-size: 20px !important;    
 }

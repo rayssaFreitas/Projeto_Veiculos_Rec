@@ -1,4 +1,4 @@
-//width
+// width
 .w-100{
     width: 100%;
 }
@@ -8,8 +8,11 @@
     padding: 10px;
 }
 
+.pd-20{
+    padding: 20px;
+}
 
-//padding-top
+// padding-top
 .pt-5{
     padding-top: 5px;
 }
@@ -23,7 +26,7 @@
 }
 
 
-//padding-bottom
+// padding-bottom
 .pb-10{
     padding-bottom: 10px;
 }
@@ -40,12 +43,18 @@
     padding-bottom: 20px;
 }
 
-
-//px padding-rigth, padding-left
-
-
+// padding-rigth
 .pr-10{
     padding-right: 10px;
+}
+
+// px (padding-right + padding-left)
+.px-25{
+    padding: 0px 25px !important;
+}
+
+.px-50{
+    padding: 0px 50px !important;
 }
 
 
@@ -55,7 +64,13 @@
     margin: 10px;
 }
 
-//my margin-top, margin-bottom
+
+// my margin-top, margin-bottom
+.my-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .my-20{
     margin-top: 20px;
     margin-bottom: 20px;

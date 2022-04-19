@@ -1,21 +1,18 @@
 #header{
     background-color: #F1F9FF;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
-h1, button{
-    font-family: 'Nunito';
-}
-
-h1, .icon-principal{
-    color: #001190;
-    font-weight: bold;
-    font-size: 28px;
+h1{
+    font-family: 'Nunito' !important;
+    text-transform: none !important;
     margin-bottom: 0px !important;
 }
 
-.pb-10{
-    padding-bottom: 10px;
+.icon-principal{
+    color: #001190;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .menu{
@@ -27,18 +24,9 @@ h1, .icon-principal{
     background: none;
 }
 
-.button-login{
+.header-button{
     background-color: #001190;
-    border: none;
-    width: 81px;
     height: 33px;
-    border-radius: 5px;
-}
-
-a{
-    color: #FFFFFF;
-    font-size: 18px;
-    text-decoration: none;
 }
 
 @media  (max-width: 768px) {
@@ -51,6 +39,6 @@ a{
     }
 
     .menu{
-        font-size: 18px;
+        font-size: 14px;
     }
 }

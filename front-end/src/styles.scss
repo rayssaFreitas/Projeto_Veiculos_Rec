@@ -1,6 +1,7 @@
 @import '~@angular/material/theming';
 @import 'scss/fonts';
-@import 'scss/format.scss';
+@import 'scss/format';
+@import 'scss/screen.scss';
 
 
 // Reset
@@ -36,10 +37,44 @@ b{
 }
 
 h1{
-	font-family: 'Montserrat';
-    font-size: 28px;
+    font-family: 'Montserrat' !important;
+    font-size: 28px !important;
     text-transform: uppercase;
     color: #001190;
+}
+
+p{
+	color: #495057;
+    font-family: 'Nunito';
+    font-size: 18px;
+}
+
+a{
+    color: #FFFFFF;
+    font-size: 18px;
+	font-family: 'Nunito';
+    text-decoration: none;
+}
+
+button, .mat-button{
+	font-family: 'Nunito';
+	font-size: 18px;
+	border-radius: 5px;
+	border: none;
+	color: #FFFFFF;
+}
+
+.mat-form-field, input, textarea{
+	font-family: 'Nunito';
+	color: #495057;
+	font-size: 18px;
+}
+
+mat-label{
+    color: #001190;
+	font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .material-icons {
@@ -50,17 +85,6 @@ h1{
 	}
 }
 
-.container{
-	margin: 20px;
-	padding: 4rem 5rem 5rem 5rem;
-}
-
-mat-label{
-    color: #001190;
-    font-size: 18px;
-    font-weight: bold;
-}
-
 .mat-form-field-flex {
     display: inline-flex;
     align-items: baseline;
@@ -69,9 +93,19 @@ mat-label{
 	border-radius: 5px !important;
 }
 
-@media  (max-width: 768px) {
-    .container{
-        padding: 3rem 1rem 3rem 1rem;
-		margin: 0px;
-    }
+.okay-button{
+    background-color: #33CCCC;
+    height: 50px;
+	font-size: 20px;
+}
+
+.center{
+	text-align: center;
+}
+
+.underline{
+    font-family: 'Nunito';
+    font-size: 18px;
+    color: #495057;
+    border-bottom: solid 2px #33CCCC !important; 
 }
